@@ -63,9 +63,9 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             echo "Deploying backend"
-            eb deploy udagram-api-environment
+            eb deploy udagram-api-dev
             echo "Deploying frontend"
-            aws s3 cp --recursive --acl public-read ./www s3://udagram-project2023/
+            aws s3 cp --recursive  ./www s3://udagram-project2022/
 
 workflows:
   udagram:

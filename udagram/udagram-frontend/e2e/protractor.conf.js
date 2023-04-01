@@ -12,7 +12,7 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'http://udagram-api-dev.eba-yaici2df.us-east-1.elasticbeanstalk.com:8080/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
