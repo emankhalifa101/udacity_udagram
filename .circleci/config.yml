@@ -5,6 +5,7 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
   # different jobs are calles later in the workflows sections
+ # collections of steps every have  have execution step
 jobs:
   build:
     docker:
@@ -13,9 +14,9 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: "14.15"
+          node-version: '14.15'         
       - checkout
-      
+      # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
           command: |
@@ -24,28 +25,29 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
+      # Install dependencies in the the api API          
       - run:
           name: Install API Dependencies
           command: |
-            echo "Install dependencies in the the backend API  "
+            echo "NODE --version" 
+            echo $(node --version)
+            echo "NPM --version" 
+            echo $(npm --version)
             npm run api:install
-      # TODO: Lint the frontend
+      # Lint the frontend
       - run:
           name: Front-End Lint
           command: |
-            echo "Lint the frontend"
             npm run frontend:lint
-      # TODO: Build the frontend app
+      # Build the frontend app
       - run:
           name: Front-End Build
           command: |
-            echo "Build the frontend app"
             npm run frontend:build
-      # TODO: Build the backend API
+      # Build the api API      
       - run:
           name: API Build
           command: |
-            echo "Build the backend API"
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
@@ -54,28 +56,27 @@ jobs:
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
-          node-version: "14.15"
+          node-version: '14.15' 
       - eb/setup
       - aws-cli/setup
       - checkout
       - run:
           name: Deploy App
-          # TODO: Install, build, deploy in both apps
+          #  Install, build, deploy in both apps
           command: |
-            echo "Deploying backend"
-            eb deploy udagram-api-dev
-            echo "Deploying frontend"
-            aws s3 cp --recursive  ./www s3://udagram-project2022/
-
+            echo "# Install, build, deploy in both apps"
+            npm run frontend:deploy
+            npm run api:deploy
+  #    trteb al job      
 workflows:
-  udagram:
+  aya-udagram:
     jobs:
       - build
       - hold:
           filters:
             branches:
               only:
-                - master
+                - main
           type: approval
           requires:
             - build
