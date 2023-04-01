@@ -67,7 +67,7 @@ jobs:
             echo "Deploying backend"
             eb deploy udagram-api-dev
             echo "Deploying frontend"
-            aws s3 cp --recursive --acl public-read ./www s3://udagram-project2022/
+            aws s3 cp --recursive ./www s3://udagram-project2022/
   #    trteb al job      
 workflows:
   udagram Project:
