@@ -64,8 +64,9 @@ jobs:
           name: Deploy App
           #  Install, build, deploy in both apps
           command: |
-            echo "# Install, build, deploy in both apps"
-            npm run frontend:deploy
+            echo "Deploying backend"
+            eb deploy udagram-api-environment
+            echo "Deploying frontend"
             npm run api:deploy
   #    trteb al job      
 workflows:
