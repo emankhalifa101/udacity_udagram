@@ -69,7 +69,7 @@ jobs:
             npm run api:deploy
   #    trteb al job      
 workflows:
-  aya-udagram:
+  udagram Project:
     jobs:
       - build
       - hold:
