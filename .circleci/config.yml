@@ -66,9 +66,9 @@ jobs:
           #  Install, build, deploy in both apps
           command: |
             echo "Deploying backend"
-            eb deploy udagram-api-dev
+            npm run api:deploy
             echo "Deploying frontend"
-            aws s3 cp --recursive --acl public-read ./www s3://udagram-project2022/
+            npm run frontend:deploy
   #    trteb al job      
 workflows:
   udagram-project:
