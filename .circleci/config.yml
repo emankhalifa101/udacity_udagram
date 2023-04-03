@@ -68,7 +68,7 @@ jobs:
             echo "Deploying backend"
             npm run api:deploy
             echo "Deploying frontend"
-            npm run frontend:deploy
+            aws s3 cp --recursive --acl public-read ./www s3://udagram-project2022/
   #    trteb al job      
 workflows:
   udagram-project:
