@@ -1,8 +1,3 @@
-[App_dependencies.md](https://github.com/emankhalifa101/udacity_udagram/files/11162514/App_dependencies.md)
-![Architecture_Diagram](https://user-images.githubusercontent.com/88828923/230189413-9c0b5bcb-9b91-4b8e-b83d-d198a123fcef.jpeg)
-![Diagram](https://user-images.githubusercontent.com/88828923/230189433-df8dddad-0a70-4683-9da5-2cd878d0cd93.jpeg)
-[Infrastructure_desc.md](https://github.com/emankhalifa101/udacity_udagram/files/11162515/Infrastructure_desc.md)
-[Pipeline_desc.md](https://github.com/emankhalifa101/udacity_udagram/files/11162516/Pipeline_desc.md)
 # Hosting a Full-Stack Application
 
 In this project you will learn how to take a newly developed Full-Stack application built for a retailer and deploy it to a cloud service provider so that it is available to customers. You will use the aws console to start and configure the services the application needs such as a database to store product information and a web server allowing the site to be discovered by potential customers. You will modify your package.json scripts and replace hard coded secrets with environment variables in your code.
@@ -20,23 +15,27 @@ This application is provided to you as an alternative starter project if you do 
 
 ---
 ## Deplyed App URL : [http://udagram-project2023.s3-website-us-east-1.amazonaws.com](http://udagram-project2023.s3-website-us-east-1.amazonaws.com)
-![image](app.png)
+![s3](https://user-images.githubusercontent.com/88828923/230190357-cc85f67a-02f3-48eb-83d9-85e33aa30e8c.png)
 
 ## s3 bucket for deploy FE
-![s3](s3 buket.png)
+![s3 buket](https://user-images.githubusercontent.com/88828923/230190346-19d5458f-64e6-4d22-9ce0-0b2d8a741951.png)
 
 ## Elastic beanstlak for deploy BE
-![elastic](EB.png)
-![backEnd](backEnd env.png)
+![EB](https://user-images.githubusercontent.com/88828923/230190309-09f2443c-ac7f-4b14-b497-b44680ebf7ed.png)
+
+![backEnd env](https://user-images.githubusercontent.com/88828923/230190275-c66e278c-4727-4832-bbce-d2f8f88115d6.png)
 
 ## RDS  for create Database
-![rds](RDS.png) 
-![rules](database configs.png)
+![RDS](https://user-images.githubusercontent.com/88828923/230190327-a4b6e2d4-a75e-445e-90b1-b9debf6ba548.png) 
+![database configs](https://user-images.githubusercontent.com/88828923/230190287-5aeb78f3-88cc-4b8f-8c57-aa87158d92fd.png)
 
+## IAM configurations
+![IAM user](https://user-images.githubusercontent.com/88828923/230190320-acd0ff0e-5df6-40a3-a6ec-d0c73b5b4b4c.png)
 ---
 ## CICD
-![image](cicd steps.png)
-![image](deployment pipeline.png)
+![cicd steps](https://user-images.githubusercontent.com/88828923/230190281-fe034444-70c2-40c6-adde-f3e2a94c2718.png)
+
+![deployment pipeline](https://user-images.githubusercontent.com/88828923/230190296-2a29fa57-fe5c-42d0-94dc-c12a77f4978c.png)
 
 ### Dependencies
 
