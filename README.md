@@ -1,3 +1,8 @@
+[App_dependencies.md](https://github.com/emankhalifa101/udacity_udagram/files/11162514/App_dependencies.md)
+![Architecture_Diagram](https://user-images.githubusercontent.com/88828923/230189413-9c0b5bcb-9b91-4b8e-b83d-d198a123fcef.jpeg)
+![Diagram](https://user-images.githubusercontent.com/88828923/230189433-df8dddad-0a70-4683-9da5-2cd878d0cd93.jpeg)
+[Infrastructure_desc.md](https://github.com/emankhalifa101/udacity_udagram/files/11162515/Infrastructure_desc.md)
+[Pipeline_desc.md](https://github.com/emankhalifa101/udacity_udagram/files/11162516/Pipeline_desc.md)
 # Hosting a Full-Stack Application
 
 In this project you will learn how to take a newly developed Full-Stack application built for a retailer and deploy it to a cloud service provider so that it is available to customers. You will use the aws console to start and configure the services the application needs such as a database to store product information and a web server allowing the site to be discovered by potential customers. You will modify your package.json scripts and replace hard coded secrets with environment variables in your code.
