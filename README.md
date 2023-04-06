@@ -37,6 +37,9 @@ This application is provided to you as an alternative starter project if you do 
 
 ![deployment pipeline](https://user-images.githubusercontent.com/88828923/230190296-2a29fa57-fe5c-42d0-94dc-c12a77f4978c.png)
 
+## CICD ENV VARIABLES
+
+
 ### Dependencies
 
 ```
